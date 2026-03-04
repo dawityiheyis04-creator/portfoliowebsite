@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#86b3ad; /* teal background */
+    position:relative;
+    overflow:hidden;
+}
+
+/* Decorative Shapes */
+body::before{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:#f4c04e;
+    border-radius:50%;
+    bottom:-100px;
+    left:-100px;
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+    background:#f4c04e;
+    top:-80px;
+    right:-80px;
+    border-radius:40px;
+    transform:rotate(45deg);
+}
+
+/* Login Card */
+.login-container{
+    background:#f3e8d7; /* beige card */
+    padding:50px 40px;
+    width:380px;
+    border-radius:15px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+    position:relative;
+    z-index:1;
+}
+
+.login-container h2{
+    font-size:28px;
+    margin-bottom:10px;
+    color:#333;
+}
+
+.login-container p{
+    font-size:14px;
+    color:#555;
+    margin-bottom:30px;
+}
+
+/* Input Fields */
+.input-group{
+    margin-bottom:25px;
+}
+
+.input-group label{
+    font-size:14px;
+    color:#333;
+    display:block;
+    margin-bottom:8px;
+}
+
+.input-group input{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#fff;
+    font-size:14px;
+    outline:none;
+    box-shadow:0 3px 8px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.input-group input:focus{
+    border:2px solid #f4a261;
+}
+
+/* Button */
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#f97316; /* orange button */
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.3s;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#ea580c;
+}
+
+/* Extra Links */
+.extra{
+    text-align:center;
+    margin-top:20px;
+    font-size:14px;
+}
+
+.extra a{
+    color:#f97316;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.extra a:hover{
+    text-decoration:underline;
+}
